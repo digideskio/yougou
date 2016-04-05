@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/zuoicon" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ececec"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/fragment_home_sousuo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:padding="2dp"
+                android:src="@drawable/sousuo" />
+
+            <EditText
+                android:id="@+id/fragment_home_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ececec"
+                android:hint="请输入关键字检索或商品编号"
+                android:padding="7dp"
+                android:singleLine="true"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/fragment_home_tuijian"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" >
+                </android.support.v4.view.ViewPager>
+
+                <RadioGroup
+                    android:id="@+id/fragment_home_rdiaogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/fragment_home_tuijian"
+                    android:layout_centerHorizontal="true"
+                    android:button="@drawable/btn_radio_holo_light1"
+                    android:clickable="false"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/fragment_home_radio0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:button="@drawable/btn_radio_holo_light1"
+                        android:checked="true"
+                        android:clickable="false" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_home_radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:button="@drawable/btn_radio_holo_light1"
+                        android:clickable="false" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_home_radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:button="@drawable/btn_radio_holo_light1"
+                        android:clickable="false" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_home_radio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:button="@drawable/btn_radio_holo_light1"
+                        android:clickable="false" />
+
+                    <RadioButton
+                        android:id="@+id/fragment_home_radio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:button="@drawable/btn_radio_holo_light1"
+                        android:clickable="false" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/fragment_home_djxpin"
+                        android:layout_width="0dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/djxpin" />
+
+                    <ImageView
+                        android:id="@+id/fragment_home_jygou"
+                        android:layout_width="0dp"
+                        android:layout_height="85dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/juyougou" />
+
+                    <ImageView
+                        android:id="@+id/fragment_home_zhekou"
+                        android:layout_width="0dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/zhekou" />
+
+                    <ImageView
+                        android:id="@+id/fragment_home_zhuangui"
+                        android:layout_width="0dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/zhuangui" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/fragment_home_shouer" 
+                        android:layout_width="0dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/shouer" />
+
+                    <ImageView
+                        android:id="@+id/fragment_home_dapai" 
+                        android:layout_width="0dp"
+                        android:layout_height="85dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/dapai" />
+
+                    <ImageView
+                        android:id="@+id/fragment_home_shouqi" 
+                        android:layout_width="0dp"
+                        android:layout_height="85dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/shouqi" />
+
+                    <ImageView
+                        android:id="@+id/fragment_home_renqi" 
+                        android:layout_width="0dp"
+                        android:layout_height="85dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/renqi" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/fragment_home_shoujizx"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/phonezx" />
+
+            <ImageView
+                android:id="@+id/fragment_home_miaosha"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/miaosha" />
+
+            <ImageView
+                android:id="@+id/fragment_home_fengxiang"
+                android:layout_width="fill_parent"
+                android:layout_height="330dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fengshang" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

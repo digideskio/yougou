@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="7dp" >
+
+        <ImageView
+            android:id="@+id/act_goodsxq_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品详情"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/act_goodsxq_love"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/loveoff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/act_goodsxq_goodspng"
+                    android:layout_width="fill_parent"
+                    android:layout_height="320dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/load" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="7dp" >
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PUMA彪马 新款男子经典基本系列短袖T恤"
+                        android:textColor="#525252"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="￥"
+                            android:textColor="#ff0000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/act_goodsxq_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="135"
+                            android:textColor="#ff0000"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="销量:"
+                            android:textColor="#525252"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/act_goodsxq_sales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2308"
+                            android:textColor="#525252"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                     >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="颜色:"
+                        android:textColor="#000000"
+                         />
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="蓝色"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_hui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="灰色"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="红色"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_write"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="白色"
+                        android:textColor="#000000"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                     >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="尺码:"
+                        android:textColor="#000000"
+                         />
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="M"
+                        android:textColor="#000000"
+                        />
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_l"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="L"
+                        android:textColor="#000000"
+                         />
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_xl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="XL"
+                        android:textColor="#000000"
+                         />
+
+                    <TextView
+                        android:id="@+id/act_goodsxq_xxl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="XXL"
+                        android:textColor="#000000"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center|left"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="品牌 :"
+                            android:textColor="#525252"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/act_goodsxq_brand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="彪马"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center|right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商品编号 :"
+                            android:textColor="#525252"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/act_goodsxq_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="100100930"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center|right"
+                            android:text="发货 :"
+                            android:textColor="#525252"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="优购"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <cn.lgx.yougou.utils.ListViewForScrollView
+                    android:id="@+id/act_goodsxq_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="none" >
+                </cn.lgx.yougou.utils.ListViewForScrollView>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_alignParentBottom="true" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#fff"
+            >
+        <TextView
+            android:id="@+id/act_goodsxq_buy" 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff0000"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="立即购买"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:id="@+id/act_goodsxq_addcart" 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#Fbbc00"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="加入购物车"
+            android:textColor="#fff"
+            />
+		
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cart" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

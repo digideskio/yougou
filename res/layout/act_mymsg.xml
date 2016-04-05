@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/act_mymsg_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="个人资料"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+	<TextView 
+	    android:id="@+id/act_mymsg_zhao"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ffffff"
+	    android:padding="10dp"
+	    android:text="账号"
+	    android:textColor="#626262"
+	    android:textSize="16sp"
+	    android:gravity="center"
+	    />
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#fff"
+	    android:padding="10dp"
+	    android:gravity="center|left"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="生日:"
+	        />
+	    <TextView
+	        android:id="@+id/act_mymsg_brithday"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="1970-01-01"
+	        />
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#fff"
+	    android:padding="10dp"
+	    android:gravity="center|left"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="年龄:"
+	        />
+	    <EditText
+	        android:id="@+id/act_mymsg_age" 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="0"
+	        android:textSize="16sp"
+	        android:background="@null"
+	        android:singleLine="true"
+	        android:inputType="number"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#fff"
+	    android:padding="10dp"
+	    android:gravity="center|left"
+	    android:layout_marginTop="5dp"
+	    android:orientation="horizontal"
+	    >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="性别:"
+	        />
+	    <TextView
+	        android:id="@+id/act_mymsg_sex"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:gravity="right"
+	        android:layout_weight="1"
+	        android:text="男"
+	        />
+	</LinearLayout>
+    
+	<Button
+	    android:onClick="referOnClick"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="20dp"
+	    android:padding="10dp"
+	    android:textSize="16sp"
+	    android:text="提\t\t交"
+	    android:textColor="#fff"
+	    android:background="@drawable/but_selector"
+	    />
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="7dp"
+        >
+        <ImageView
+            android:id="@+id/act_goodslist_back" 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            />
+        
+        <TextView
+            android:id="@+id/act_goodslist_tvtype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品列表"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            />
+    
+    </LinearLayout>
+    <cn.lgx.yougou.view.XListView 
+        android:id="@+id/act_goodslist_lv"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_margin="5dp"
+		android:scrollbars="none"
+        ></cn.lgx.yougou.view.XListView>
+
+</LinearLayout>
